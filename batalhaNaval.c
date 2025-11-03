@@ -14,10 +14,20 @@ int main()
     }
 
     //Definindo a posição dos navios no tabuleito
-    tabuleiro [2][2] = 3,tabuleiro [2][3] = 3,tabuleiro [2][4] = 3;
-    tabuleiro [5][8] = 3,tabuleiro [6][8] = 3,tabuleiro [7][8] = 3;
+    for (int i = 2; i < 5; i++)
+    {
+    tabuleiro [7][2] = 3,tabuleiro [7][i] = 3,tabuleiro [7][i] = 3;
+    tabuleiro [4][8] = 3,tabuleiro [i+2][8] = 3,tabuleiro [i+3][8] = 3;
+    }
 
-
+    for (int i = 4; i < 7; i++){
+        tabuleiro[i][i] = 3;    
+    }
+    
+    for (int i = 0; i < 3; i++){
+            tabuleiro[0+i][8-i] = 3;
+    }
+    
     //Loop aninhado para imprimir o tabuleiro
     for (int i = 0; i < 10; i++)
     {
